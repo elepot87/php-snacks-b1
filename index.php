@@ -136,8 +136,8 @@ foreach ($posts as $data => $value) {
         foreach ($value as $key => $valore) {
             // echo "<li>$key: $valore</li>"; 
             {
-                foreach ($valore as $chiave => $prova) {
-                    echo "<li>$prova</li>";
+                foreach ($valore as $chiave => $post) {
+                    echo "<li>$post</li>";
                 }
             }
         }
