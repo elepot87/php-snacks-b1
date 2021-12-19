@@ -58,8 +58,6 @@
     
 // Snack 4
 // Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta
-
-
 $randomNumbers = array();//creo l'array dei numeri
 for($i = 0; $i < 15; $i++){//inizio un ciclo da ripetere 7 volte
 $controllo = true;//creo una variabile di controllo
@@ -73,5 +71,12 @@ $controllo = false;//interrompo il ciclo
 }//fine ciclo for
 print_r($randomNumbers);
 
+
+// Snack 5
+// Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
+$paragraph = " Quisque vel leo quis urna lobortis laoreet. Mauris aliquam nulla dui, vitae aliquam magna sagittis vitae. Curabitur eu efficitur sem, eget rutrum sapien. Fusce venenatis dapibus ultrices. Nunc aliquet eu arcu nec interdum. Curabitur blandit pretium tortor, ac blandit magna convallis quis. Sed eget massa bibendum quam consectetur accumsan. Etiam ullamcorper mattis auctor. Aenean blandit tempor enim. Pellentesque ligula risus, commodo nec condimentum ac, vulputate ac mi. Phasellus ipsum justo, convallis sed aliquam vitae, rhoncus ac dolor. Donec laoreet nibh nec eros cursus, eu pulvinar dolor dignissim. Vivamus pulvinar, justo eget maximus varius, dolor diam cursus sem, sit amet placerat magna lorem at eros.";
+
+$partsParagraph = explode('.', $paragraph);
+print_r($partsParagraph);
 
 ?>
