@@ -235,11 +235,10 @@ $students = [
     ],
 ];
 
-   for($i = 0; $i < count($students); $i++) {
-                echo $students[$i]['name'].' '.$students[$i]['lastname'].' '.$students[$i]['votes'].'<br>';
-            } ;
-
-
+   for($i = 0; $i < count($students); $i++) 
+   {
+        echo $students[$i]['name'].' '.$students[$i]['lastname'].' '.$students[$i]['votes'].'<br>';
+    };
 
 ?>
 
