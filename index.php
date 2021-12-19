@@ -1,4 +1,15 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <?php
 // Snack 1
     // Creiamo un array contenente le partite di basket di un'ipotetica tappa del calendario.
     // Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite.
@@ -143,5 +154,57 @@ foreach ($posts as $data => $value) {
         }
     }
 }
-
 ?>
+
+    <!-- Snack 6
+    Utilizzare questo array: https://pastebin.com/CkX3680A. Stampiamo il nostro array mettendo gli insegnanti in un
+    rettangolo grigio e i PM in un rettangolo verde. -->
+    <?php
+ 
+    $db = [
+        'teachers' => [
+            [
+                'name' => 'Michele',
+                'lastname' => 'Papagni'
+            ],
+            [
+                'name' => 'Fabio',
+                'lastname' => 'Forghieri'
+            ]
+        ],
+        'pm' => [
+            [
+                'name' => 'Roberto',
+                'lastname' => 'Marazzini'
+            ],
+            [
+                'name' => 'Federico',
+                'lastname' => 'Pellegrini'
+            ]
+        ]
+    ];
+ 
+?>
+
+    <div style="background: grey; margin-top: 20px;">
+        <?php 
+            for($i = 0; $i < count($db['teachers']); $i++) {
+                echo $db['teachers'][$i]['name'].' '.$db['teachers'][$i]['lastname'].'<br>';
+            }          
+        ?>
+    </div>
+
+    <div style="background: green; margin-top: 20px;">
+        <?php 
+            for($i = 0; $i < count($db['pm']); $i++) {
+                echo $db['pm'][$i]['name'].' '.$db['pm'][$i]['lastname'].'<br>';
+            }       
+        ?>
+
+    </div>
+
+
+
+</body>
+
+</html>
