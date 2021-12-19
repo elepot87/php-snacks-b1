@@ -237,9 +237,13 @@ $students = [
 
    for($i = 0; $i < count($students); $i++) 
    {
-        echo $students[$i]['name'].' '.$students[$i]['lastname'].' '.$students[$i]['votes'].'<br>';
+        echo $students[$i]['name'].' '.$students[$i]['lastname'].'<br>'; 
+        {
+            for ($x=0; $x < 1; $x++) { 
+                echo "Media:".' '.array_sum($students[$i]['votes'])/count($students[$i]['votes']).'<br>';
+            }
+        }
     };
-
 ?>
 
 </body>
