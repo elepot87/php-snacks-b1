@@ -194,7 +194,7 @@ foreach ($posts as $data => $value) {
         ?>
     </div>
 
-    <div style="background: green; margin-top: 20px;">
+    <div style="background: green; margin: 20px 0;">
         <?php 
             for($i = 0; $i < count($db['pm']); $i++) {
                 echo $db['pm'][$i]['name'].' '.$db['pm'][$i]['lastname'].'<br>';
