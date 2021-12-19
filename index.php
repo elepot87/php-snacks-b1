@@ -200,10 +200,48 @@ foreach ($posts as $data => $value) {
                 echo $db['pm'][$i]['name'].' '.$db['pm'][$i]['lastname'].'<br>';
             }       
         ?>
-
     </div>
 
+    <!-- Snack 7
+Creare un array contenente qualche alunno di un'ipotetica classe. Ogni alunno avrà Nome, Cognome e un array contenente i suoi voti scolastici. Stampare Nome, Cognome e la media dei voti di ogni alunno. -->
+    <?php
+$students = [
+    [
+        'name' => "Andrea",
+        'lastname' => 'Bambury',
+        'votes' => [
+            'informatica' => 10,
+            'lettere' => 8,
+            'inglese' => 10,
+        ]
+    ],
+    [
+        'name' => "Eleonora",
+        'lastname' => 'Potente',
+        'votes' => [
+            'informatica' => 7,
+            'lettere' => 10,
+            'inglese' => 8,
+        ]
+    ],
+    [
+        'name' => "Alice",
+        'lastname' => 'Sergio',
+        'votes' => [
+            'informatica' => 7,
+            'lettere' => 6,
+            'inglese' => 6,
+        ]
+    ],
+];
 
+   for($i = 0; $i < count($students); $i++) {
+                echo $students[$i]['name'].' '.$students[$i]['lastname'].' '.$students[$i]['votes'].'<br>';
+            } ;
+
+
+
+?>
 
 </body>
 
