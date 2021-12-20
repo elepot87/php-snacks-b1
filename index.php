@@ -81,15 +81,44 @@ for($i = 0; $i < 15; $i++) {//inizio un ciclo da ripetere 15 volte
     }//fine ciclo while
 }//fine ciclo for
 print_r($randomNumbers);
+?>
 
+    <?php
 
 // Snack 5
 // Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
 $paragraph = " Quisque vel leo quis urna lobortis laoreet. Mauris aliquam nulla dui, vitae aliquam magna sagittis vitae. Curabitur eu efficitur sem, eget rutrum sapien. Fusce venenatis dapibus ultrices. Nunc aliquet eu arcu nec interdum. Curabitur blandit pretium tortor, ac blandit magna convallis quis. Sed eget massa bibendum quam consectetur accumsan. Etiam ullamcorper mattis auctor. Aenean blandit tempor enim. Pellentesque ligula risus, commodo nec condimentum ac, vulputate ac mi. Phasellus ipsum justo, convallis sed aliquam vitae, rhoncus ac dolor. Donec laoreet nibh nec eros cursus, eu pulvinar dolor dignissim. Vivamus pulvinar, justo eget maximus varius, dolor diam cursus sem, sit amet placerat magna lorem at eros.";
 
 $partsParagraph = explode('.', $paragraph);
-print_r($partsParagraph);
+var_dump($partsParagraph);
+?>
 
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <?php
+            for ($i=0; $i < count($partsParagraph); $i++) { 
+                if(!empty($partsParagraph[$i])) { ?>
+        <p>
+            <?php echo $partsParagraph[$i]; ?>.
+        </p>
+        <?php } ?>
+        <?php } ?>
+
+
+    </body>
+
+    </html>
+
+    <?php
 // Snack 3
 // Creare un array di array. Ogni array figlio avrà come chiave una data in questo formato: DD-MM-YYYY es 01-01-2007 e come valore un array di post associati a quella data. Stampare ogni data con i relativi post.
 // Qui l'array di esempio: https://www.codepile.net/pile/R2K5d68z
