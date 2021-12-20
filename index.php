@@ -70,15 +70,15 @@
 // Snack 4
 // Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta
 $randomNumbers = array();//creo l'array dei numeri
-for($i = 0; $i < 15; $i++){//inizio un ciclo da ripetere 7 volte
-$controllo = true;//creo una variabile di controllo
-while($controllo){//ripeto l'azione fino a qaundo controllo non diventa false
-$numRandom = rand(0,15);
-if(!in_array($numRandom, $randomNumbers)){//controllo che il numero non sia già presente
-$randomNumbers[] = $numRandom ;//aggiungo il numero all'array
-$controllo = false;//interrompo il ciclo
-}//fine if
-}//fine ciclo while
+for($i = 0; $i < 15; $i++) {//inizio un ciclo da ripetere 15 volte
+    $controllo = true;//creo una variabile di controllo
+    while($controllo) {//ripeto l'azione fino a qaundo controllo non diventa false
+        $numRandom = rand(0,15);
+        if(!in_array($numRandom, $randomNumbers)) {//controllo che il numero non sia già presente
+            $randomNumbers[] = $numRandom ;//aggiungo il numero all'array
+            $controllo = false;//interrompo il ciclo
+        }//fine if
+    }//fine ciclo while
 }//fine ciclo for
 print_r($randomNumbers);
 
